@@ -16,7 +16,7 @@ jobs:
           credentials_json: ${{ secrets.GCP_SA_KEY }} 
 
       - name: Trigger Cloud Build for DAG deployment
-        uses: google-github-actions/cloudbuild-build@v1
+        uses: google-github-actions/cloud-build@v1
         with:
           project_id: ardent-case-465107-c9
           build_config_path: add-dags-to-composer.cloudbuild.yaml
