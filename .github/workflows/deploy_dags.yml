@@ -18,5 +18,5 @@ jobs:
       - name: Trigger Cloud Build for DAG deployment
         uses: google-github-actions/cloudbuild-build@v1
         with:
-          project_id: your-gcp-project-id
+          project_id: ardent-case-465107-c9
           build_config_path: add-dags-to-composer.cloudbuild.yaml
